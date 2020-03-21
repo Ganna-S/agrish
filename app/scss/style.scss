@@ -79,7 +79,51 @@
     }
   }
 }
-
 //end header
-
-//end footer
+// start progress
+.title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "Raleway", sans-serif;
+  color: #333333;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  span {
+    font-weight: 100;
+  }
+}
+.progress {
+  padding: 140px 0 170px;
+  &__text {
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 18px;
+    padding-bottom: 70px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        display: flex;
+        align-items: center;
+      img {
+        padding-right: 30px;
+      }
+      .progress__number {
+        color: #2e211d;
+        .number {
+          font-size: 50px;
+          font-weight: 800;
+        }
+        .number__text{
+            font-size: 16px;
+            font-weight: 700;
+            color: #555555;
+        }
+      }
+    }
+  }
+}
+// end progress
