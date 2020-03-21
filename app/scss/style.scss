@@ -99,8 +99,10 @@
   &__text {
     text-align: center;
     color: #b3b3b3;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 70px;
+    font-weight: 300;
+    line-height: 25px;
   }
   &__inner {
     display: flex;
@@ -185,3 +187,63 @@
   }
 }
 // end quality
+// start agro
+.agro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  .agro__inner {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    &-box {
+      max-width: 550px;
+      padding: 115px 0;
+      margin-right: 100px;
+      &__title {
+        color: #fff;
+        text-align: start;
+        max-width: 300px;
+      }
+      &__text {
+        line-height: 23px;
+        padding: 60px 0;
+      }
+      &__btn {
+        background-color: #99d373;
+        padding: 15px 50px;
+        color: #333333;
+        font-weight: 700;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+// end agro
+// start services
+.services {
+  padding: 140px 0 170px;
+  &__text {
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 16px;
+    padding-bottom: 70px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      text-align: center;
+      &__title {
+        color: #333333;
+        font-weight: 700;
+        padding-top: 35px;
+      }
+    }
+  }
+}
+//end services
