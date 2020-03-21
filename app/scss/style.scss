@@ -162,5 +162,26 @@
   width: 100%;
   height: 100%;
 }
-
 // end products
+// start quality
+.quality {
+  padding: 160px 0 140px;
+  .quality__inner {
+    display: flex;
+    img {
+      width: 580px;
+      height: 410px;
+    }
+    &-text {
+      max-width: 670px;
+      padding: 80px 0 100px 130px;
+      font-family: "Storytella";
+      font-size: 74px;
+      color: #4fb1c9;
+      span {
+        color: #99d373;
+      }
+    }
+  }
+}
+// end quality
