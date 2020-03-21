@@ -1,9 +1,85 @@
-@import 'global';
+@import "global";
+@import "fonts";
 
 //start header
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .header__top-line {
+    border-bottom: 1px solid #696565;
+    .header__inner {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      &-menu {
+        padding-top: 10px;
+        .menu__list {
+          li {
+            display: inline-block;
+            & + li {
+              margin-left: 30px;
+            }
+          }
+          a {
+            text-transform: uppercase;
+          }
+        }
+      }
+      &-call {
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        span {
+          color: #99d373;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+  .header__inner-menu a:hover {
+    color: #99d373;
+  }
+  .header__inner-menu a.active {
+    border-bottom: 3px solid #99d373;
+    padding-bottom: 35px;
+  }
+  .header__content {
+    &-title {
+      font-family: "Storytella";
+      font-size: 200px;
+      padding: 200px 0;
+      text-align: center;
+    }
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      &__item {
+        width: 260px;
+        height: 420px;
+        background-color: #0e141d;
+        margin-bottom: 100px;
+        img {
+          width: 260px;
+          height: 240px;
+        }
+        .item__title {
+          font-family: "Raleway", sans-serif;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 30px;
+          text-transform: uppercase;
+          max-width: 150px;
+          padding: 55px 35px;
+          span {
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+}
 
-
-
+//end header
 
 //end footer
-
