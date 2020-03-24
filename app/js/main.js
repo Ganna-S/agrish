@@ -5,7 +5,9 @@ $(function () {
         dots: true,
         arrows: false,
     });
-
+    $('.header__menu-btn').on('click', function () {
+        $('ul.menu__list').slideToggle();
+    });
     new WOW().init();
 
     var Animation = function () {
@@ -22,5 +24,6 @@ $(function () {
         Animation();
     });
     Animation();
+
 });
 
