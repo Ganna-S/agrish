@@ -278,6 +278,8 @@
         display: inline-flex;
         img {
           border-radius: 50%;
+          width: 70px;
+          height: 70px;
         }
         .customer__data {
           padding: 30px 20px;
@@ -351,8 +353,9 @@ ul.slick-dots {
       }
       &__content {
         position: absolute;
-        bottom: 20px;
+        top: 180px;
         left: 20px;
+        right: 20px;
         .content__label {
           color: #99d373;
           text-transform: uppercase;
@@ -362,6 +365,7 @@ ul.slick-dots {
         }
         .content__title {
           font-size: 16px;
+          text-transform: capitalize;
         }
       }
     }
