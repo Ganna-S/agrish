@@ -9,33 +9,29 @@
   background-position: center;
   .header__top-line {
     border-bottom: 1px solid #696565;
-    .header__inner {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 40px;
-      &-menu {
-        padding-top: 10px;
-        .menu__list {
-          li {
-            display: inline-block;
-            & + li {
-              margin-left: 30px;
-            }
-          }
-          a {
-            text-transform: uppercase;
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    &-menu {
+      padding-top: 10px;
+      .menu__list {
+        li {
+          display: inline-block;
+          & + li {
+            margin-left: 30px;
           }
         }
-      }
-      &-call {
-        padding-top: 10px;
-        text-transform: uppercase;
-        font-weight: 700;
-        span {
-          color: #99d373;
-          padding-right: 15px;
+        a {
+          text-transform: uppercase;
         }
       }
+    }
+    &-call {
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
     }
   }
   .header__menu-btn {
@@ -54,39 +50,39 @@
     border-bottom: 3px solid #99d373;
     padding-bottom: 35px;
   }
-  .header__content {
-    &-title {
-      font-family: "Storytella";
-      font-size: 200px;
-      padding: 200px 0;
-      text-align: center;
-    }
-    &-inner {
-      display: flex;
-      justify-content: space-between;
-      &__item {
-        width: 260px;
-        height: 420px;
-        background-color: #0e141d;
-        margin-bottom: 100px;
-        img {
-          width: 260px;
-          height: 240px;
-        }
-        .item__title {
-          font-family: "Raleway", sans-serif;
-          font-weight: 900;
-          font-size: 30px;
-          line-height: 30px;
-          text-transform: uppercase;
-          max-width: 150px;
-          padding: 55px 35px;
-          span {
-            font-weight: 100;
-          }
-        }
+}
+.header__content {
+  &-title {
+    font-family: "Storytella";
+    font-size: 120px;
+    padding: 70px 0 120px;
+    text-align: center;
+  }
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      width: 260px;
+      height: 420px;
+      background-color: #0e141d;
+      margin-bottom: 150px;
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
+  }
+}
+.item__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  max-width: 150px;
+  padding: 55px 35px;
+  span {
+    font-weight: 100;
   }
 }
 //end header
@@ -156,19 +152,19 @@
       width: 0;
       height: 0;
       overflow: hidden;
-      .item__title {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        height: 100%;
-        text-transform: capitalize;
-        font-family: "Raleway", sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-      }
     }
   }
+}
+.products__item-title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
 .products__inner-item:hover .products__inner-item__box {
   width: 100%;
@@ -182,9 +178,9 @@
     display: flex;
     &-text {
       max-width: 670px;
-      padding: 80px 0 100px 130px;
+      padding: 80px 0 100px 75px;
       font-family: "Storytella";
-      font-size: 74px;
+      font-size: 60px;
       color: #4fb1c9;
       span {
         color: #99d373;
@@ -214,7 +210,6 @@
       &__title {
         color: #fff;
         text-align: start;
-        max-width: 300px;
       }
       &__text {
         line-height: 23px;
@@ -248,6 +243,13 @@
     justify-content: space-between;
     &-item {
       text-align: center;
+      &__icon {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
       &__title {
         color: #333333;
         font-weight: 700;
@@ -323,50 +325,50 @@ ul.slick-dots {
     color: #4d4c4c;
     padding-bottom: 60px;
   }
-  .blog__inner {
-    display: flex;
-    justify-content: space-between;
-    &-item {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 270px;
-      height: 270px;
-      position: relative;
-      &__date {
-        position: absolute;
-        top: 0;
-        left: 20px;
-        background-color: #99d373;
-        padding: 10px;
-        text-align: center;
-        color: #333333;
-        .day {
-          font-weight: 800;
-          font-size: 18px;
-        }
-        .month {
-          font-size: 16px;
-          color: #696565;
-          font-size: 10px;
-        }
+}
+.blog__inner {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 270px;
+    height: 270px;
+    position: relative;
+    &__date {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      background-color: #99d373;
+      padding: 10px;
+      text-align: center;
+      color: #333333;
+      .day {
+        font-weight: 800;
+        font-size: 18px;
       }
-      &__content {
-        position: absolute;
-        top: 180px;
-        left: 20px;
-        right: 20px;
-        .content__label {
-          color: #99d373;
-          text-transform: uppercase;
-          font-weight: 300;
-          font-size: 12px;
-          padding-bottom: 10px;
-        }
-        .content__title {
-          font-size: 16px;
-          text-transform: capitalize;
-        }
+      .month {
+        font-size: 16px;
+        color: #696565;
+        font-size: 10px;
+      }
+    }
+    &__content {
+      position: absolute;
+      top: 180px;
+      left: 20px;
+      right: 20px;
+      .content__label {
+        color: #99d373;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+        padding-bottom: 10px;
+      }
+      .content__title {
+        font-size: 16px;
+        text-transform: capitalize;
       }
     }
   }
@@ -375,64 +377,62 @@ ul.slick-dots {
 //start footer
 .footer {
   background-color: #0d0d1a;
-  .footer__inner {
-    padding: 80px 0 30px;
-    display: flex;
-    justify-content: space-between;
-    .footer__col {
-      &-list {
-        display: flex;
-        flex-direction: column;
-        li {
-          padding-bottom: 20px;
-        }
+}
+.footer__inner {
+  padding: 80px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  .footer__col {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      li {
+        padding-bottom: 20px;
       }
-      &-contact {
-        span {
-          color: #99d373;
-          text-transform: uppercase;
-        }
+    }
+    &-contact {
+      span {
+        color: #99d373;
+        text-transform: uppercase;
+      }
+      a {
+        padding-left: 15px;
+        padding-bottom: 20px;
+      }
+    }
+    &-social {
+      li {
         a {
-          padding-left: 15px;
-          padding-bottom: 20px;
-        }
-      }
-      &-social {
-        li {
-          a{
-            color: #b3b3b3;
-            &:hover{
-              color: #99d373;
-            }
+          color: #b3b3b3;
+          &:hover {
+            color: #99d373;
           }
-          
-          & + li {
-            margin-left: 10px;
-          }
-          display: inline-block;
         }
+
+        & + li {
+          margin-left: 10px;
+        }
+        display: inline-block;
       }
     }
   }
-  .footer__copy {
-    .footer__inner-copy {
-      display: flex;
-      justify-content: space-between;
-      text-transform: uppercase;
-      font-size: 12px;
-      line-height: 24px;
-      padding: 15px 0;
-      color: #999999;
-      a {
-        color: #999999;
-      }
-    }
+}
+.footer__inner-copy {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 15px 0;
+  color: #999999;
+  a {
+    color: #999999;
   }
 }
 .footer__col-list a:hover {
   color: #99d373;
 }
 .copy-text a {
-  margin-left: 15 px;
+  margin-left: 15px;
 }
 //end footer
