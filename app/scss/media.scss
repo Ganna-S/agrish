@@ -70,7 +70,7 @@
     padding: 0 30px;
     .header__content {
       &-title a {
-        padding: 0 20px;
+        padding: 35px 20px;
       }
     }
   }
@@ -228,10 +228,10 @@
 }
 @media (max-width: 460px) {
   .header .header__content-title {
-    font-size: 36px;
+    font-size: 48px;
     padding: 60px 0 70px;
     a {
-      padding: 0 10px;
+      padding: 10px;
     }
   }
   .header .header__content-inner__item{
